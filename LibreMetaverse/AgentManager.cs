@@ -1254,7 +1254,7 @@ namespace OpenMetaverse
         #endregion Callbacks
 
         /// <summary>Reference to the GridClient instance</summary>
-        private readonly GridClient Client;
+        public GridClient Client { get; private set; }
         /// <summary>Used for movement and camera tracking</summary>
         public readonly AgentMovement Movement;
         /// <summary>Currently playing animations for the agent. Can be used to
