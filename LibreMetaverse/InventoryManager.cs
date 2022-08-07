@@ -437,8 +437,8 @@ namespace OpenMetaverse
 
         #endregion String Arrays
 
-        [NonSerialized]
-        private GridClient Client;
+        public GridClient Client { get; private set; }
+
         [NonSerialized]
         private Inventory _Store;
         //private Random _RandNumbers = new Random();
